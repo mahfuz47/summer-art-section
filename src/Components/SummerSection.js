@@ -22,6 +22,28 @@ const SummerSection = () => {
           </span>
         </p>
       </div>
+      <div className="grid grid-cols-2 place-content-center place-items-center">
+        <div>
+          <article>{article}</article>
+          <div className="flex justify-start items-center space-x-2 py-4">
+            <img className="w-8 h-7 rounded-full" src={userimg} alt="user" />
+            <h1>{user}</h1>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 gap-x-2">
+          <div>
+            <img className="row-span-3 h-full" src={img1} alt="art image1" />
+          </div>
+          <div className="inline-block space-y-2">
+            <div>
+              <img src={img2} alt="art image2" />
+            </div>
+            <div>
+              <img src={img3} alt="art image3" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
