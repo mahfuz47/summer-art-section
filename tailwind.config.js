@@ -1,8 +1,22 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {},
   },
-  plugins: [],
+  daisyui: {
+    themes: [
+      {
+        portalTheme: {
+          primary: "#9857cf",
+          secondary: "#8115CF",
+          accent: "#3A4256",
+          neutral: "#3d4451",
+          "base-100": "#ffffff",
+        },
+      },
+      "light",
+      "cupcake",
+    ],
+  },
+  plugins: [require("daisyui")],
 };
